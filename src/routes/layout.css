@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+	--default-font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+	--font-integral: 'Integral CF', sans-serif;
+
+	/* Whitewater Rush Official Color Palette */
+	--color-rapids-light: #cde6f4;
+	--color-rapids-dark: #112b3a;
+	--color-river-teal: #4f756f;
+	--color-river-blue: #43697c;
+	--color-sun: #e1d35f;
+	--color-danger: #c34531;
+	--color-sand: #d4c099;
+
+	/* River flow animation */
+	--animate-river-flow: river-flow 20s ease-in-out infinite;
+	--animate-river-flow-slow: river-flow 25s ease-in-out infinite;
+	--animate-river-flow-slower: river-flow 30s ease-in-out infinite;
+
+	@keyframes river-flow {
+		0%,
+		100% {
+			transform: translateX(0) translateY(0);
+		}
+		25% {
+			transform: translateX(-2%) translateY(1%);
+		}
+		50% {
+			transform: translateX(0) translateY(-1%);
+		}
+		75% {
+			transform: translateX(2%) translateY(1%);
+		}
+	}
+}
+
+/* Integral CF Font */
+@font-face {
+	font-family: 'Integral CF';
+	src: url('/fonts/IntegralCF-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Integral CF';
+	src: url('/fonts/IntegralCF-Bold%20Oblique.woff2') format('woff2');
+	font-weight: 700;
+	font-style: oblique;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Integral CF';
+	src: url('/fonts/IntegralCF-Heavy.woff2') format('woff2');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Integral CF';
+	src: url('/fonts/IntegralCF-Heavy%20Oblique.woff2') format('woff2');
+	font-weight: 900;
+	font-style: oblique;
+	font-display: swap;
+}
