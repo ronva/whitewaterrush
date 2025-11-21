@@ -150,7 +150,7 @@
 		<h2 id="river-cards" class="font-integral text-3xl font-bold text-rapids-dark sm:text-4xl">
 			River Cards
 		</h2>
-		<div class="mx-auto max-w-7xl">
+		<div class="mx-auto w-full max-w-7xl">
 			<CardGallery {cards} />
 		</div>
 	</div>
